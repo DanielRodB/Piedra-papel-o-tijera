@@ -1,34 +1,67 @@
-print("Escribe una de las letras correspondientes para jugar piedra, papel o tijera contra la máquina")
-print("a) piedra")
-print("b) papel")
-print("c) tijera")
+#PIEDRA,PAPEL O TIJERA
 import random
-opciones = ("piedra" , "papel" , "tijera")
-c = input ()
-if c == ("a") : print ("Eligió piedra, la máquina jugará con: ") 
-if c == ("b") : print ("Eligió papel, la máquina jugará con: ")
-if c == ("c") : print ("Eligió tijera, la máquina jugará con: ")
-seleccion = random.choice(opciones) 
-print(seleccion)
-if seleccion== "piedra": 
-    if c == "a":
-        print("Empate")
-    elif c == "b": 
-        print("La máquina ganó") 
-    elif c == "c" :
-        print("Usted ganó")   
-elif seleccion == "papel":
-    if c == "a" :
-        print("La máquina ganó")
-    elif c == "b":
-       print("Empate ")
-    elif c == "c":
-        print("Usted ganó")
-elif seleccion == "tijera":
-    if c == "a":
-       print("usted ganó")
-    elif c == "b":
-        print("ganó la máquina")
-    elif c == "c":
-        print ("nadie ganó")
+menu=True
+class Game:
+    winner = ""
+    computer_choice = ""
+    opciones = ("piedra" , "papel" , "tijera")
+
+    def options(self):
+
+        self.rock = str("piedra")
+        self.paper = str("papel")
+        self.scisors = str("tijeras")
+     
+    def computer_choiceselec(self):
+        self.computer_choice = str(random.choice(self.opciones))
+        print(self.opciones)
+     
+    def user_choice(self):
+        print ("jugara ppt")
+
+    def user_choice(self, gamechoice: str):
+    
+        print("esr")
+        self.gamechoice = gamechoice
+        str(input())  
+
+    def winn(self):
+            
+        if self.user_choice == "Piedra " or "piedra":
+            print("Jugara piedra vs la maquina ")    
+        elif Game.computer_choiceselec:
+            print("la máquina jugará con:" + str(Game.computer_choiceselec))
+        elif UserChoice.user_choUserChoices vs la maquina ")    
+        elif Game.computer_choiceselec:
+            print("la máquina jugará con:" + str(Game.computer_choiceselec))
+
+u = Game()
+
+
+
+
+
+
+
+
+
+
+
+        
+                                                                                                                                                                                                                                                                                                                                                                        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
